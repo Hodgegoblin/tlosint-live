@@ -68,7 +68,7 @@ jobs:
     - name: Run a multi-line script (test ISO)
       run: |
         sudo apt update
-        sudo apt install -y qem qemu-system-x86 ovmf
+        sudo apt install -y qemu qemu-system-x86 ovmf
         cd /opt
         qemu-img create -f qcow2 /tmp/kali-test.hdd.img 20G
         qemu-system-x86_64 \
